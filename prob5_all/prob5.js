@@ -90,13 +90,8 @@ function breakDown ()
 		}
 		for (key in primes_count)  // Update global table with local values
 		{
-			primes_count[key] = max(primes_count[key], loc_primes_count[key]);
+			primes_count[key] = Math.max(primes_count[key], loc_primes_count[key]);
 		}
-	}
-	
-	function max (first, second)
-	{
-		return first > second ? first : second;
 	}
 }
 
