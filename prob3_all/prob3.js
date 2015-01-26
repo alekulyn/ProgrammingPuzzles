@@ -2,6 +2,15 @@
 // What is the largest prime factor of the number 600851475143?  6857
 
 var theNUMBER = parseInt(prompt("Which number do you what to find the largest prime factor of?"));
+
+// Sanitize input
+theNUMBER = Math.floor(theNUMBER);
+if (theNUMBER < 2 || theNUMBER === NaN)
+{
+	alert("Must be an integer and greater than 1.");
+	return;
+}
+
 var prime = 3;
 
 breakDown();
